@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh; /* Takes full height of the device screen */
+}
+
+main {
+  flex: 1; /* Fills up all remaining empty space */
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
