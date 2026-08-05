@@ -5,6 +5,14 @@ body {
   min-height: 100dvh; /* Takes full height of the device screen */
 }
 
+header {
+  background-color: darkgreen;
+  padding: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
 main {
   flex: 1; /* Fills up all remaining empty space */
 }
