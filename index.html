@@ -162,23 +162,34 @@
 <body>
 
 	<!-- top nav -->
-	<nav>
+	<header>
 		<h1>Dom & Jacqui's Amazing Killer Sudoku Online Adventuuuurrreeee!</h1>
-	</nav>
+	</header>
 
 	<!-- end top nav -->
     
     <!-- main -->
     <div class = "main-container">
-		<div class = "header">
+
+
+		<div class = "sassnav">
 			<p>Mwahah sudoku time suckers >:D</p>
 			<button type="button" onclick="alert('WoW I cannot believe you actually did that!')">Click Me if you Dare!</button>
+
+			<nav>
+	        	<ul>
+	            	<li><a href="#">Lobby</a></li>
+	            	<li><a href="#">Stats</a></li>
+	            	<li><a href="#">Settings</a></li>
+	        	</ul>
+	    	</nav>
 		</div>
+
 		<div class = "sudoku-game" id="game-screen"> 
 			<div class = "main-sudoku-board">
 				<!-- 81 cells -->
-				    <div class="main-grid-cell"></div>
-                    <div class="main-grid-cell"></div>
+				    <div class="main-grid-cell">1</div>
+                    <div class="main-grid-cell">2</div>
                     <div class="main-grid-cell"></div>
                     <div class="main-grid-cell"></div>
                     <div class="main-grid-cell"></div>
@@ -260,7 +271,7 @@
                     <div class="main-grid-cell"></div>			
 			</div>
 			<!-- number pad for inputting numbers-->
-			<div class="numbers">
+			<div class="keypadnumbers">
                     <div class="number">1</div>
                     <div class="number">2</div>
                     <div class="number">3</div>

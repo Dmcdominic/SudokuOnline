@@ -1,3 +1,8 @@
+main {
+  flex: 1; /* Fills up all remaining empty space */
+}
+
+
 body {
   margin: 0;
   display: flex;
@@ -6,20 +11,76 @@ body {
 }
 
 header {
+  background-color: yellow;
+}
+
+.sassnav {
   background-color: darkgreen;
   padding: 25px;
-  text-align: center;
+  text-align: center; 
   font-size: 12px;
   color: white;
 }
 
-main {
-  flex: 1; /* Fills up all remaining empty space */
+.main-container {
+  display: flex;
+  background-color: #A5663A;
+}
+
+
+.sudoku-game {
+  flex: 1;
+  background-color: purple;
+  padding: 20px pink;
+  border: 5px solid gray;
+  margin: 10px;
+}
+
+.main-sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: blue;
+  padding: 10px;
+  /*margin: 10px;*/
+  gap: 2px;
+}
+
+.main-grid-cell {
+  background-color: white;
+  /*display: flex;*/
+  padding: 10px;
+  border: 0px solid black;
+  margin: 0px; /*Space between boxes*/
+  column-gap: 0px;
+  gap: 0px;
+}
+
+.keypadnumbers {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 5px pink;
+  margin: 10px;
+  color: white; /*text color*/
+}
+
+
+.nav {
+  background-color: blue;
+  padding: 10px;
+  border: 5px pink;
+  margin: 0;
 }
 
 footer {
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
+  background-color: #66280C;
   color: white;
+  margin-top: auto;
 }
+
