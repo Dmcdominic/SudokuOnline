@@ -1,3 +1,8 @@
+main {
+  flex: 1; /* Fills up all remaining empty space */
+}
+
+
 body {
   margin: 0;
   display: flex;
@@ -5,13 +10,79 @@ body {
   min-height: 100dvh; /* Takes full height of the device screen */
 }
 
-main {
-  flex: 1; /* Fills up all remaining empty space */
+header {
+  background-color: yellow;
+}
+
+.sassnav {
+  background-color: darkgreen;
+  padding: 10px;
+  text-align: center; 
+  font-size: 12px;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  background-color: #A5663A;
+  flex-grow: 1; /*Container takes up remaing space*/
+}
+
+
+.sudoku-game {
+  flex: 1;
+  background-color: purple;
+  padding: 50px;
+  border: 5px solid gray;
+  margin: 5px;
+  place-items: center;
+}/*Container for sudoku board*/
+
+.main-sudoku-board { 
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: blue;
+  padding: 5px;
+  /*margin: 10px;*/
+  gap: 2px;
+}/*Sudoku board*/
+
+.main-grid-cell {
+  background-color: white;
+  padding: 10px;
+  border: 0px solid black;
+  margin: 0px; /*Space between boxes*/
+  column-gap: 0px;
+  gap: 0px;
+}
+
+.keypadnumbers {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 5px pink;
+  margin: 10px;
+  color: white; /*text color*/
+}
+
+
+.nav {
+  background-color: blue;
+  padding: 10px;
+  border: 5px pink;
+  margin: 0;
 }
 
 footer {
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
+  background-color: #66280C;
   color: white;
+  margin-top: auto;
 }
+
