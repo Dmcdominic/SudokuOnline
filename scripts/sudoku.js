@@ -309,3 +309,38 @@ function isNumValidForNonet(grid, num, x, y)
     return true;
 }
 
+
+// ================= DISPLAY LOGIC =================
+console.log("Generating main-sudoku-board");
+generateMainSudokuBoardHTML();
+console.log("Updating main-sudoku-board");
+var solvableMainPuzzle = generateSolvablePuzzle();
+updateMainSudokuBoardDisplay(solvableMainPuzzle);
+
+function generateMainSudokuBoardHTML()
+{
+    var mainSudokuBoard = $(".main-sudoku-board");
+    for (var y = 0; y < 9; y++)
+    {
+        for (var x = 0; x < 9; x++)
+        {
+            mainSudokuBoard.append('<div class="main-grid-cell" row="' + y + '" col="' + x + '"></div>');
+        }
+    }
+}
+
+function updateMainSudokuBoardDisplay(grid)
+{
+    for (var y = 0; y < 9; y++)
+    {
+        for (var x = 0; x < 9; x++)
+        {
+            var num = grid[y][x] ?? "&nbsp;";
+            if (num)
+            {
+                $(".main-grid-cell[row$=" + y +"][col$=" + x +"]").html(num);
+            }
+        }
+    }
+}
+
